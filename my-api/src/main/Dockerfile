@@ -5,7 +5,7 @@ FROM openjdk:11-jdk-slim
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file to the container
-COPY my-api/target/my-api-1.0.0.1591234567.jar  /app/app.jar
+COPY ../../target/my-api-1.0.0.1591234567.jar  /app/app.jar
 
 # Expose the port that your Spring Boot application listens on
 EXPOSE 8080
